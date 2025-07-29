@@ -14,13 +14,12 @@ Welcome to XRTailor's Documentation!
 
 .. toctree::
    :maxdepth: 2
+   :caption: Swift Mode
+
+   swift_mode/obstacle_cloth_collision.md
+
+.. toctree::
+   :maxdepth: 2
    :caption: Quality Mode
 
    quality_mode/impact_zone_optimization.md
-
-.. toctree::
-..    :maxdepth: 2
-..    :caption: Cloth Mechanics
-
-..    cloth_mechanics/basic_xpbd.md
-..    cloth_mechanics/fem.md
