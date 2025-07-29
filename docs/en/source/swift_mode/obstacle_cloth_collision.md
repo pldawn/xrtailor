@@ -1,6 +1,11 @@
 # Obstacle-Cloth Collision
 
+- [DCD](md-dcd)
+- [CCD](md-ccd)
+
 In swift mode, the PBD-based collision response scheme is used to handle obstacle-cloth collisions. Specifically, discrete collision detection(DCD) and continuous collision detection(CCD) constraints are incorporated into the simulator.
+
+(md-dcd)=
 
 ## DCD
 
@@ -161,6 +166,8 @@ The positional updates:
 \Delta p_3 = s * w_3 * b_3 * n
 \end{cases}
 ```
+
+(md-ccd)=
 
 ## CCD
 
