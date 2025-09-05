@@ -24,7 +24,7 @@ Creating a custom garment asset involves several key steps:
 
 ## Software Requirements
 
-The following softwares are required for the garment asset creation workflow:
+The following software tools are required for the garment asset creation workflow:
 
 | Software | Purpose | Version |
 |----------|---------|---------|
@@ -79,7 +79,7 @@ Notice that there exists penetration between the avatar and the ground plane. To
 Since body meshes vary across genders and body models, garment templates must be created separately for each body model and gender combination:
 
 - **SMPL and SMPL-H**: These bodies can be perfectly aligned in T-pose, eliminating the need for duplicate construction
-- **SMPL-X**: Exhibits differences in T-pose (including mesh topology and global translation) compared to SMPL(H), requiring separate templates
+- **SMPL-X**: Exhibits differences in T-pose (including mesh topology and global translation) compared to SMPL and SMPL-H, requiring separate templates
 
 ### Sewing Pattern Design & Draping
 
@@ -124,9 +124,7 @@ Once the garment is properly dressed onto the avatar, export it as an OBJ file f
   <p><em>Export menu</em></p>
 </div>
 
-In the `Export OBJ` dialog, enable `Select All Patterns`, 
-`Weld`, and `Thin`, set the `Scale` to `meters (m)`, configure 
-`Axis Conversion` to `(X, Y(Up), Z)`:
+In the `Export OBJ` dialog, enable `Select All Patterns`, `Weld`, and `Thin`, set the `Scale` to `meters (m)`, configure `Axis Conversion` to `(X, Y(Up), Z)`:
 
 <div style="text-align: center;">
   <img src="../_static/common/preparing_your_own_asset/md_obj_export_option.png" style="width: 60%; max-width: 100%;">
@@ -190,9 +188,7 @@ Export the garment mesh as an `.obj` file using `Files → Save OBJ As...`:
 
 XRTailor requires specific metadata to make garment assets functional in the simulation pipeline. The metadata requires the following key components:
 
-
-
-- **STYLE**: Defines the garment type under certain naming convention
+- **STYLE**: Defines the garment type under a certain naming convention
 - **BINDING**: Specifies constraint points for simulation stability
 - **ATTACHED_INDICES**: Sets reference point for long-range attachment (LRA)
 
@@ -216,7 +212,7 @@ Here are some style examples:
 
 ### Binding
 
-The `BINDING` constraint is used to limit cloth vertex positions so that they're guaranteed to be close to the avatar during the simulation, which addresses several challenges:
+The `BINDING` constraint is used to limit cloth vertex positions so that they are guaranteed to be close to the avatar during the simulation, which addresses several challenges:
 
 1. **Tethering Effects**: Simulate tethering effects like belts or elastic waistband
 2. **Collision Recovery**: Prevent cloth vertices from slipping off the body when collision response algorithm fails:
