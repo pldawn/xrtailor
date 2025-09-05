@@ -14,6 +14,12 @@ Welcome to XRTailor's Documentation!
 
 .. toctree::
    :maxdepth: 2
+   :caption: Common
+
+   common/preparing_your_own_asset.md
+
+.. toctree::
+   :maxdepth: 2
    :caption: Swift Mode
 
    swift_mode/obstacle_cloth_collision.md
