@@ -1,7 +1,7 @@
 <br/>
 
 <div align="center">
-    <img src="resources/xrtailor-logo.png" width="600"/>
+    <img src="docs/en/source/_static/logo.png" width="600"/>
 </div>
 
 <br/>

@@ -1,12 +1,49 @@
-# Overview
+---
+sd_hide_title: true
+---
 
-- [Features](md-features)
-- [Architecture](md-architecture)
+# 🔎 Overview
+
+::::{grid}
+:reverse:
+:gutter: 3 4 4 4
+:margin: 1 2 1 2
+
+:::{grid-item}
+:columns: 12 4 4 4
+
+:::
+
+:::{grid-item}
+:columns: 12 8 8 8
+:child-align: justify
+:class: sd-fs-5
+
+```{rubric} XRTailor
+```
+OpenXRLab GPU Cloth Simulation Engine
+
+````{div} sd-d-flex-row
+```{button-ref} getting_started/quick_start
+:ref-type: doc
+:color: primary
+:class: sd-rounded-pill sd-mr-3
+
+Quick Start
+```
+````
+::::
+
+---
+
+<div style="text-align: center;">
+  <img src="_static/banner.jpg" style="width: 100%; max-width: 100%;">
+</div>
+
+## Overview
 
 *XRTailor* is a GPU-accelerated cloth simulation engine optimized for large-scale data generation. By leveraging parallel computing techniques, 
 *XRTailor* delivers high-fidelity cloth dynamics while maintaining performance, making it a practical choice for applications in animation, gaming and machine learning dataset synthesis.
-
-(md-features)=
 
 ## Features
 
@@ -36,12 +73,47 @@
 
 - *OpenGL Rendering*. A built-in graphical interface provides visualization and control over the simulation process.
 
-(md-architecture)=
-
 ## Architecture
 
 The architecture of *XRTailor* is:
 
 <div style="text-align: center;">
-  <img src="../_static/architecture.jpg" style="width: 66%; max-width: 100%;" alt="My image description">
+  <img src="_static/architecture.jpg" style="width: 66%; max-width: 100%;">
+  <p><em>Architecture</em></p>
 </div>
+
+```{toctree}
+:hidden:
+:caption: Getting Started
+:maxdepth: 2
+
+getting_started/quick_start.md
+getting_started/engine_config_example.md
+getting_started/simulation_config_example.md
+getting_started/build_from_source.md
+getting_started/technical_brief.md
+```
+
+```{toctree}
+:hidden:
+:caption: Common
+:maxdepth: 2
+
+common/preparing_your_own_asset.md
+```
+
+```{toctree}
+:hidden:
+:caption: Swift Mode
+:maxdepth: 2
+
+swift_mode/obstacle_cloth_collision.md
+```
+
+```{toctree}
+:hidden:
+:caption: Quality Mode
+:maxdepth: 2
+
+quality_mode/impact_zone_optimization.md
+```
